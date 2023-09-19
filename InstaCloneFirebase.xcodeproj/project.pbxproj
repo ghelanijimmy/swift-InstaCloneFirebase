@@ -18,6 +18,9 @@
 		96BC0D562AB9CD5000F560FB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 96BC0D552AB9CD5000F560FB /* FirebaseAuth */; };
 		96BC0D622AB9CD5000F560FB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 96BC0D612AB9CD5000F560FB /* FirebaseFirestore */; };
 		96BC0D7C2AB9CD5000F560FB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 96BC0D7B2AB9CD5000F560FB /* FirebaseStorage */; };
+		96BC0D822ABA201900F560FB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0D812ABA201900F560FB /* FeedViewController.swift */; };
+		96BC0D842ABA203000F560FB /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0D832ABA203000F560FB /* UploadViewController.swift */; };
+		96BC0D862ABA204100F560FB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0D852ABA204100F560FB /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		96BC0D3E2AB9C5E400F560FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96BC0D402AB9C5E400F560FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96BC0D462AB9CB6500F560FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96BC0D812ABA201900F560FB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		96BC0D832ABA203000F560FB /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		96BC0D852ABA204100F560FB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,7 @@
 			children = (
 				96BC0D322AB9C5DB00F560FB /* AppDelegate.swift */,
 				96BC0D342AB9C5DB00F560FB /* SceneDelegate.swift */,
-				96BC0D362AB9C5DB00F560FB /* ViewController.swift */,
+				96BC0D802ABA1FDA00F560FB /* controllers */,
 				96BC0D382AB9C5DB00F560FB /* Main.storyboard */,
 				96BC0D3B2AB9C5E400F560FB /* Assets.xcassets */,
 				96BC0D3D2AB9C5E400F560FB /* LaunchScreen.storyboard */,
@@ -76,6 +82,17 @@
 				96BC0D462AB9CB6500F560FB /* GoogleService-Info.plist */,
 			);
 			path = InstaCloneFirebase;
+			sourceTree = "<group>";
+		};
+		96BC0D802ABA1FDA00F560FB /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96BC0D362AB9C5DB00F560FB /* ViewController.swift */,
+				96BC0D812ABA201900F560FB /* FeedViewController.swift */,
+				96BC0D832ABA203000F560FB /* UploadViewController.swift */,
+				96BC0D852ABA204100F560FB /* SettingsViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BC0D372AB9C5DB00F560FB /* ViewController.swift in Sources */,
+				96BC0D842ABA203000F560FB /* UploadViewController.swift in Sources */,
 				96BC0D332AB9C5DB00F560FB /* AppDelegate.swift in Sources */,
+				96BC0D822ABA201900F560FB /* FeedViewController.swift in Sources */,
 				96BC0D352AB9C5DB00F560FB /* SceneDelegate.swift in Sources */,
+				96BC0D862ABA204100F560FB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

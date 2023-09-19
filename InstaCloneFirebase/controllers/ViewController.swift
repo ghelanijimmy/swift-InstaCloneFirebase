@@ -27,6 +27,6 @@ class ViewController: UIViewController {
 
 #Preview {
     let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-    let controller = storyboard.instantiateViewController(withIdentifier: "mainVC")
+    let controller = storyboard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
     return controller
 }
