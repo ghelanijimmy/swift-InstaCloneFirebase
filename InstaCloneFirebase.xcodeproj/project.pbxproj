@@ -21,6 +21,7 @@
 		96BC0D822ABA201900F560FB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0D812ABA201900F560FB /* FeedViewController.swift */; };
 		96BC0D842ABA203000F560FB /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0D832ABA203000F560FB /* UploadViewController.swift */; };
 		96BC0D862ABA204100F560FB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0D852ABA204100F560FB /* SettingsViewController.swift */; };
+		96BC0D882ABB844300F560FB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0D872ABB844300F560FB /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		96BC0D812ABA201900F560FB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		96BC0D832ABA203000F560FB /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		96BC0D852ABA204100F560FB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		96BC0D872ABB844300F560FB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				96BC0D812ABA201900F560FB /* FeedViewController.swift */,
 				96BC0D832ABA203000F560FB /* UploadViewController.swift */,
 				96BC0D852ABA204100F560FB /* SettingsViewController.swift */,
+				96BC0D872ABB844300F560FB /* FeedCell.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BC0D882ABB844300F560FB /* FeedCell.swift in Sources */,
 				96BC0D372AB9C5DB00F560FB /* ViewController.swift in Sources */,
 				96BC0D842ABA203000F560FB /* UploadViewController.swift in Sources */,
 				96BC0D332AB9C5DB00F560FB /* AppDelegate.swift in Sources */,
