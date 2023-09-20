@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmS-JB-rni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-324" y="660"/>
+            <point key="canvasLocation" x="-300" y="679"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hPe-UT-lgj">
@@ -81,7 +81,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anf-mj-VWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-324" y="-90"/>
+            <point key="canvasLocation" x="-300" y="-56"/>
         </scene>
         <!--Upload-->
         <scene sceneID="Rja-eM-mYs">
@@ -90,15 +90,52 @@
                     <view key="view" contentMode="scaleToFill" id="7fk-hC-PMb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taptoselect" translatesAutoresizingMaskIntoConstraints="NO" id="xcM-p0-BCA">
+                                <rect key="frame" x="76" y="102" width="241" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="cdf-q1-6RW"/>
+                                    <constraint firstAttribute="width" constant="241" id="mMq-ck-K82"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Giv-bT-iEa">
+                                <rect key="frame" x="42" y="442" width="308" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE2-IG-m8B">
+                                <rect key="frame" x="157" y="522" width="79" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="actionButtonClicked:" destination="4Zg-h0-R1W" eventType="touchUpInside" id="GT6-Et-0jI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="esY-Ry-15b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xcM-p0-BCA" firstAttribute="centerX" secondItem="7fk-hC-PMb" secondAttribute="centerX" id="71I-Uf-nv7"/>
+                            <constraint firstItem="xcM-p0-BCA" firstAttribute="top" secondItem="esY-Ry-15b" secondAttribute="top" constant="102" id="DEC-Ji-BNE"/>
+                            <constraint firstItem="Giv-bT-iEa" firstAttribute="leading" secondItem="esY-Ry-15b" secondAttribute="leading" constant="42" id="bFe-XZ-tvX"/>
+                            <constraint firstItem="NE2-IG-m8B" firstAttribute="top" secondItem="Giv-bT-iEa" secondAttribute="bottom" constant="46" id="efd-QC-rm0"/>
+                            <constraint firstItem="Giv-bT-iEa" firstAttribute="centerX" secondItem="NE2-IG-m8B" secondAttribute="centerX" id="esR-ju-REk"/>
+                            <constraint firstItem="xcM-p0-BCA" firstAttribute="centerX" secondItem="Giv-bT-iEa" secondAttribute="centerX" id="g99-iM-O10"/>
+                            <constraint firstItem="Giv-bT-iEa" firstAttribute="top" secondItem="xcM-p0-BCA" secondAttribute="bottom" constant="90" id="mbX-nD-v7S"/>
+                            <constraint firstItem="xcM-p0-BCA" firstAttribute="leading" secondItem="esY-Ry-15b" secondAttribute="leading" constant="76" id="pEt-AH-KSg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="INk-1l-mpz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="commentText" destination="Giv-bT-iEa" id="c58-9T-mSS"/>
+                        <outlet property="imageView" destination="xcM-p0-BCA" id="lr5-eD-34c"/>
+                        <outlet property="uploadButton" destination="NE2-IG-m8B" id="pj5-n8-eeV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYq-dN-iLT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784" y="434"/>
+            <point key="canvasLocation" x="783.96946564885491" y="433.80281690140845"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8Yz-DE-2ae">
@@ -171,12 +208,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEe-MQ-GdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1321" y="257"/>
+            <point key="canvasLocation" x="-1245" y="-56"/>
         </scene>
     </scenes>
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="taptoselect" width="240" height="250"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
