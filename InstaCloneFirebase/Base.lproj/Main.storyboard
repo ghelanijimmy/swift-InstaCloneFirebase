@@ -70,6 +70,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8W-bD-3Tk">
+                                                    <rect key="frame" x="331" y="21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="42T-ig-ovt" firstAttribute="trailing" secondItem="1c8-r8-coD" secondAttribute="trailing" id="6VD-Ad-JUv"/>
@@ -78,7 +84,9 @@
                                                 <constraint firstItem="nDU-Ta-Ycq" firstAttribute="trailing" secondItem="15t-C4-CaP" secondAttribute="trailing" id="EaG-YU-085"/>
                                                 <constraint firstItem="nDU-Ta-Ycq" firstAttribute="leading" secondItem="dkn-4m-Gz3" secondAttribute="leadingMargin" id="EgQ-mb-M1i"/>
                                                 <constraint firstItem="nDU-Ta-Ycq" firstAttribute="leading" secondItem="15t-C4-CaP" secondAttribute="leading" id="Orx-ni-H38"/>
+                                                <constraint firstItem="nDU-Ta-Ycq" firstAttribute="centerY" secondItem="S8W-bD-3Tk" secondAttribute="centerY" id="PVg-5n-vOD"/>
                                                 <constraint firstItem="42T-ig-ovt" firstAttribute="top" secondItem="15t-C4-CaP" secondAttribute="bottom" constant="8" id="QT8-Cx-M4K"/>
+                                                <constraint firstItem="nDU-Ta-Ycq" firstAttribute="trailing" secondItem="S8W-bD-3Tk" secondAttribute="trailing" id="TR5-b8-od8"/>
                                                 <constraint firstItem="15t-C4-CaP" firstAttribute="leading" secondItem="42T-ig-ovt" secondAttribute="leading" id="Tc0-h4-gb8"/>
                                                 <constraint firstItem="LPs-eL-lzB" firstAttribute="centerY" secondItem="1c8-r8-coD" secondAttribute="centerY" id="Xn9-HA-npe"/>
                                                 <constraint firstItem="LPs-eL-lzB" firstAttribute="leading" secondItem="dkn-4m-Gz3" secondAttribute="leadingMargin" constant="-8" id="feM-vh-UrJ"/>
@@ -89,6 +97,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="42T-ig-ovt" id="NRd-dW-o8X"/>
+                                            <outlet property="documentIdLabel" destination="S8W-bD-3Tk" id="2tP-NL-d2i"/>
                                             <outlet property="emailLabel" destination="nDU-Ta-Ycq" id="G5a-pR-tOG"/>
                                             <outlet property="likeLabel" destination="1c8-r8-coD" id="tN5-EZ-OL1"/>
                                             <outlet property="userImageView" destination="15t-C4-CaP" id="syb-rP-Ouv"/>

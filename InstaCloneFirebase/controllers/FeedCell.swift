@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import FirebaseFirestore
 
 class FeedCell: UITableViewCell {
 
@@ -14,6 +15,9 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var likeLabel: UILabel!
+    @IBOutlet weak var documentIdLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,5 +30,16 @@ class FeedCell: UITableViewCell {
     }
 
     @IBAction func likeButtonClicked(_ sender: UIButton) {
+        let firestoreDatabase = Firestore.firestore()
+        
+        if let likeCount = Int(likeLabel.text!) {
+            
+            let likePost = ["likes": likeCount + 1] as [String: Any]
+            
+            firestoreDatabase.collection("Posts")
+                .document(documentIdLabel.text!)
+                .setData(likePost, merge: true)
+        }
+        
     }
 }
